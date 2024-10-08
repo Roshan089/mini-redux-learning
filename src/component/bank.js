@@ -6,6 +6,9 @@ const Bank = () => {
     const count = useSelector((state) => state.amount); // Adjusted to select amount from state
     const dispatch = useDispatch();
 
+    console.log(count);
+    
+
     return (
         <div>
             <button className="btn" onClick={() => dispatch(amount(10))}>Deposit $10</button> {/* Adding $10 */}
